@@ -2,6 +2,7 @@ import InputForm from './components/InputForm'
 import NoteDisplay from './components/NoteDisplay'
 import { getNotes, addNote, removeNote } from './backendHandler'
 import { useEffect, useState } from 'react'
+import refreshIcon from './assets/refresh.svg'
 import './App.css'
 
 
@@ -32,6 +33,9 @@ function App() {
 
   return (
     <div>
+      <button className='refresh-button'>
+        <img onClick={(e) => {refreshNotesList()}} src={refreshIcon} />
+      </button>
       <h1>Notes</h1>
       <NoteDisplay 
         noteList={notesList} 
