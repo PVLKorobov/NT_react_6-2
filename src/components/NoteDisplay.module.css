@@ -1,0 +1,7 @@
+.note-display {
+    height: 300px;
+    padding: 0px;
+    margin: 20px;
+    display: flex;
+    list-style: none;
+}
